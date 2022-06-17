@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
 
   registerMode= false;
 
-  constructor() { }
+  constructor(){ }
 
   
   registerToggle(){
@@ -18,5 +18,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  cancelRegisterMode(event:boolean){
+    this.registerMode = event;
+  }
+
+ 
 
 }
